@@ -24,8 +24,6 @@ vim.keymap.set('n', 'Q', '<nop>')
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
 
 
-vim.keymap.set('i', 'E', '$')
-vim.keymap.set('i', 'B', '^')
 vim.keymap.set('n', 'E', '$')
 vim.keymap.set('n', 'B', '^')
 
