@@ -86,7 +86,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
+      { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -110,7 +110,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',          opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -183,7 +183,7 @@ require('lazy').setup({
   },
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim',         opts = {} },
+  { 'numToStr/Comment.nvim', opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
   {
@@ -336,7 +336,8 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
+    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim',
+      'bash' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
@@ -389,10 +390,10 @@ vim.defer_fn(function()
       swap = {
         enable = true,
         swap_next = {
-          ['<leader>a'] = '@parameter.inner',
+          ['<leader>aa'] = '@parameter.inner',
         },
         swap_previous = {
-          ['<leader>A'] = '@parameter.inner',
+          ['<leader>AA'] = '@parameter.inner',
         },
       },
     },
